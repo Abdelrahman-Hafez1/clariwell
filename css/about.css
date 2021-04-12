@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.margint{
+    margin-top: 120px;
+}
+.top-bar{
+    background-color: #074575;
+    color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top-bar ul li{
+    float: left;
+    padding-left: 20px;
+}
+.top-bar ul li a{
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+.top-bar ul li:hover a{
+color: #0b8ef3;
+}
+
+.main-nav ul{
+    overflow: hidden;
+}
+.main-nav ul li{
+   
+    padding-left: 20px;
+    padding-right:20px ;
+    
+}
+.main-nav ul li a{
+    color: #074575;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+.main-nav ul li:hover a{
+    color: #0b8ef3;
+    text-decoration: none;
+}
+
+.main-nav .icons i:last-of-type{
+    position: relative;
+    top: -5px;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: #074575;
+    cursor: pointer;
+}
+.main-nav .icons i:last-of-type::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    bottom:-9px;
+    background: #074575;
+    cursor: pointer;
+    
+}
+.main-nav .icons i:last-of-type::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top:-9px;
+    background: #074575;
+    cursor: pointer;
+}
+.main-nav i{
+    font-size: 22px;
+}
+.search{
+    padding: 20px 10px;
+    background-color: rgb(209, 228, 201);
+    width: 250px;
+    height: 100px;
+    right:25%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.search i{
+    position: absolute;
+    right: 10px;
+    top: 2px; 
+    cursor: pointer;
+}
+.search input{
+    margin-top: 10px;
+    border: 1px solid rgb(184, 174, 174);
+    outline: none;
+}
+.toggle-nav ul li{
+    border-top:1px solid #ddd;
+}
+.toggle-icons{
+    display: none;
+}
+.toggle-nav{
+    display: none;
+    overflow: hidden;
+}
+@media (max-width: 1000px) { 
+    .nav-right{
+        display: none;
+    }
+    .toggle-icons{
+        display: block;
+    }
+    
+ }
+
+ /* end navbar */
+
+ /* start header */
+.header{
+    background-image: url(../img/lab-page-title.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.header .page{
+    width: 100%;
+    text-align: center;
+}
+.header .current-page{
+    width: 100%;
+    text-align: center;
+}
+
+.header .page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header .current-page{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .page h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header .current-page span {
+    padding: 10px 20px;
+}
+.header .current-page span a{
+    text-decoration: none;
+    color: #bbb;
+}
+
+.header i,.header .current-page .current{
+    color: #fff;
+}
+
+
+
+.advantage{
+    color: #fff;
+}
+.Fadvant{
+    background-color: #074575;
+
+}
+.Fadvant i{
+    color: #0b8ef3;
+    font-size: 40px;
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+.Fadvant .border{
+    border-color: #bbb;
+}
+.Sadvant h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Sadvant p{
+    color: #bbb;
+}
+
+.head-cont{
+    padding: 50px 10px;
+}
+.head{
+    color: #074575;
+
+}
+.head h2{
+    font-size:35px;
+    font-weight: bold;
+}
+.head p{
+    font-size: 20px;
+}
+.head-txt{
+    color: #777;
+}
+.head-cont button{
+    background-color: #0b8ef3;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.head-cont button:hover{
+    background-color: #074575;
+}
+.goals{
+    background-image: url(../img/clariwell-blue-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+}
+.goals .icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.goals p{
+    color: #bbb;
+}
+
+/* Experts */
+
+.Experts h2{
+    color: #074575;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.Experts .txt{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Experts .overlay-img-show{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+.Experts .overlay-img-show img{
+    transition: transform 1s ease-in-out;
+}
+
+
+.Experts .overlay{
+    background-color: #074575a4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.Experts .overlay-img-show:hover .overlay{
+    z-index: 1;
+    opacity: 1;
+}
+
+.Experts .card-body h5{
+    color: #074575;
+    font-weight: bold;
+
+}
+.Experts .card-body span{
+    color: #777;
+
+}
+
+.overlay-card{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.show-overLay{
+    opacity: 0;
+    animation:popupOverlay 0.5s forwards ;
+}
+@keyframes popupOverlay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.overlay-card .overlay-all{
+    background-color: rgba(15, 15, 15, 0.486);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+.overlay-card img{
+    width: 100%;
+    height: 100%;
+}
+.overlay-card .card-show{
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 60%;
+    min-height: 60%;
+    background-color: #fff;
+    padding: 40px 50px;
+}
+
+.overlay-card .card-show .fa-window-close{
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 40px;
+    color: #074575;
+}
+.overlay-card .card-show span{
+    color: #0b8ef3;
+}
+.overlay-card .card-show p{
+    color: #777;
+    margin-top: 20px;
+    padding:0 0 20px 0;
+    border-bottom: 1px solid #999;
+}
+.overlay-card .card-show .icons i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.overlay-card .card-show .icons .fa-facebook-square{
+    color: #074575;
+}
+.overlay-card .card-show .icons .fa-twitter-square{
+    color: #0b8ef3;
+}
+.overlay-card .card-show .icons .fa-linkedin{
+    color: #074575;
+}
+.overlay-card .card-show .icons .fa-instagram-square{
+    color: #074575;
+}
+
+
+
+.certificate{
+    padding: 50px 0;
+}
+.certificate h2{
+    color: #074575;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.certificate .txt{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.footer{
+    background-image: url(../img/clariwell-footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: #777;
+}
+.footer h4{
+    color: #074575;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.footer ul li i{
+    margin-right: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #777;
+    transition: color 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    color: #0b8ef3;
+}
+
+.footer .icons i{
+    font-size: 26px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.footer .icons .fa-facebook-square{
+    color: #074575;
+}
+.footer .icons .fa-twitter-square{
+    color: #0b8ef3;
+}
+.footer .icons .fa-linkedin{
+    color: #074575;
+}
+.footer .icons .fa-instagram-square{
+    color: #074575;
+}
+
+.bottomEnd{
+    background-color: #074575;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 630;
+
+}
+

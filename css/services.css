@@ -1,0 +1,446 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.margint{
+    margin-top: 120px;
+}
+.top-bar{
+    background-color: #074575;
+    color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top-bar ul li{
+    float: left;
+    padding-left: 20px;
+}
+.top-bar ul li a{
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+.top-bar ul li:hover a{
+color: #0b8ef3;
+}
+
+.main-nav ul{
+    overflow: hidden;
+}
+.main-nav ul li{
+   
+    padding-left: 20px;
+    padding-right:20px ;
+    
+}
+.main-nav ul li a{
+    color: #074575;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+.main-nav ul li:hover a{
+    color: #0b8ef3;
+    text-decoration: none;
+}
+
+.main-nav .icons i:last-of-type{
+    position: relative;
+    top: -5px;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: #074575;
+    cursor: pointer;
+}
+.main-nav .icons i:last-of-type::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    bottom:-9px;
+    background: #074575;
+    cursor: pointer;
+    
+}
+.main-nav .icons i:last-of-type::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top:-9px;
+    background: #074575;
+    cursor: pointer;
+}
+.main-nav i{
+    font-size: 22px;
+}
+.search{
+    padding: 20px 10px;
+    background-color: rgb(209, 228, 201);
+    width: 250px;
+    height: 100px;
+    right:25%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.search i{
+    position: absolute;
+    right: 10px;
+    top: 2px; 
+    cursor: pointer;
+}
+.search input{
+    margin-top: 10px;
+    border: 1px solid rgb(184, 174, 174);
+    outline: none;
+}
+.toggle-nav ul li{
+    border-top:1px solid #ddd;
+}
+.toggle-icons{
+    display: none;
+}
+.toggle-nav{
+    display: none;
+    overflow: hidden;
+}
+@media (max-width: 1000px) { 
+    .nav-right{
+        display: none;
+    }
+    .toggle-icons{
+        display: block;
+    }
+    
+ }
+
+ /* end navbar */
+
+ /* start header */
+.header{
+    background-image: url(../img/lab-page-title.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+
+.header .page{
+    width: 100%;
+    text-align: center;
+}
+.header .current-page{
+    width: 100%;
+    text-align: center;
+}
+.header .page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header .current-page{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .page h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header .current-page span {
+    padding: 10px 20px;
+}
+.header .current-page span a{
+    text-decoration: none;
+    color: #bbb;
+}
+
+.header i,.header .current-page .current{
+    color: #fff;
+}
+
+
+.services h2{
+    color: #074575;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.services .txt p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.services button{
+    padding: 13px 25px;
+    text-transform: uppercase;
+    color: #0b8ef3;
+    background-color: #fff;
+    border: 2px solid #0b8ef3;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition:background-color 0.5s ease-in-out;
+}
+.services button:hover{
+    background-color: #0b8ef3;
+    color: #fff;
+}
+
+
+.services .card-body h5{
+    color: #074575;
+    font-weight: bold;
+
+}
+.services .card-body p{
+    color: #777;
+}
+.services .card-body a{
+    text-decoration: none;
+    color: #0b8ef3;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.services .card-body .Card-link{
+    overflow: hidden;
+    width: 100px;
+}
+.services .card-body a::after{
+    content: "";
+    background-color: #0b8ef3;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    top: 101%;
+    left: -100%;
+    transition: all 0.5s ease-in-out;
+}
+.services .card-body .Card-link:hover a::after{
+    left: 0;
+}
+
+.services .overlay-img{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+.services .overlay-img img{
+    transition: transform 1s ease-in-out;
+}
+
+
+.services .overlay{
+    background-color: #074575a4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.services .overlay-img:hover .overlay{
+    z-index: 1;
+    opacity: 1;
+}
+
+
+
+.choose-us{
+    background-image: url(../img/lab-home1-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.choose-us .bg{
+    background-color: #fff;
+    padding:100px;
+}
+.choose-us .row{
+    margin: 0;
+}
+.choose-us h2{
+    color: #074575;
+    font-weight: bold;
+    font-size: 35px;
+}
+.choose-us p{
+    color: #777;
+}
+.Sadvant h6{
+    font-size: 20px;
+    font-weight: bold;
+    color: #074575;
+}
+.Sadvant p{
+    color: #999;
+}
+.Sadvant i{
+    color: #0b8ef3;
+    font-size: 40px;
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+
+.Lab{
+   
+    padding: 30px 10px;
+}
+
+.Lab .cont h2{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px 0;
+    letter-spacing: 3px;
+    color: #074575;
+}
+.Lab .cont h4{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.Lab .cont p{
+   font-size: 50px;
+   font-weight: bold;
+   text-align: center;
+   color: #0b8ef3;
+}
+.Lab .cont span{
+   color: #074575;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   
+}
+
+
+.subscribe{
+    background-image: url(../img/clariwell-blue-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.subscribe .container{
+    width: 60%;
+    text-align: center;
+}
+.subscribe h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+}
+.subscribe p{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.subscribe input{
+    width: 90%;
+    padding:10px 20px ;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+.subscribe button{
+    padding: 10px 20px;
+    width: 90%;
+    background-color: #0b8ef3;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.subscribe button:hover{
+    background-color: #074575;
+}
+
+.footer{
+    background-image: url(../img/clariwell-footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: #777;
+}
+.footer h4{
+    color: #074575;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.footer ul li i{
+    margin-right: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #777;
+    transition: color 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    color: #0b8ef3;
+}
+
+.footer .icons i{
+    font-size: 26px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.footer .icons .fa-facebook-square{
+    color: #074575;
+}
+.footer .icons .fa-twitter-square{
+    color: #0b8ef3;
+}
+.footer .icons .fa-linkedin{
+    color: #074575;
+}
+.footer .icons .fa-instagram-square{
+    color: #074575;
+}
+
+.bottomEnd{
+    background-color: #074575;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 630;
+
+}
+
+
